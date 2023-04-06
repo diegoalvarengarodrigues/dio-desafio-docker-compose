@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio Docker Compose</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Primeiro Desafio Docker Compose - Bootcamp DIO</h1>
+    </div>
+
+    <script>
+
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 250 * i);
+            });
+        }
+
+        const titulo = document.querySelector('h1');
+        typeWriter(titulo);
+
+    </script>
+
+</body>
+</html>
